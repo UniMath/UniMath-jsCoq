@@ -1,0 +1,8 @@
+
+(rule
+ (targets coq-pkgs)
+ (deps
+  (glob_files_rec "*.vo"))
+ (action
+  (run npx %{env:pkgtool=jscoq} build UniMath --top UniMath
+       --package coq-pkgs/unimath.coq-pkg)))
