@@ -35,7 +35,7 @@ Require Import UniMath.Foundations.All.
         base_path:     './node_modules/jscoq/',
         editor:        { mode: { 'company-coq': true }, keyMap: 'default' },
         init_pkgs:     ['init'],
-        all_pkgs:      {'+': ['coq'], '_build/default/coq-pkgs': ['unimath']}
+        all_pkgs:      {'+': ['coq'], 'UniMath/_build/default/coq-pkgs': ['unimath']}
     };
 
     JsCoq.start(jscoq_opts.base_path, './node_modules', jscoq_ids, jscoq_opts);
